@@ -1,0 +1,33 @@
+.titulo{
+  text-align: center;
+  display: block;
+  font-style:inherit
+}
+
+.texto{
+  font-style: inherit;
+}
+
+.buscar{
+  width: 500;
+  text-align: center;
+
+}
+
+.barraBuscar{
+  width: 300px;
+  text-align: center;
+
+}
+
+.imagem{
+  border-radius: 5px;
+}
+
+.imagemBloco{
+  display: inline-block;
+  margin: 10px;
+
+}
+
+

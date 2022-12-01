@@ -1,0 +1,23 @@
+<body class="corpo">
+  <h1 class="titulo">Rick and Morty:<br> Busca de Personagens</h1>
+  <div class="buscar">
+    <input class="barraBuscar" type="search"
+            placeholder="Digite o nome do personagem!"
+            [(ngModel)]="buscarPersonagem">
+  </div>
+  <br>
+    <div class="imagemBloco" *ngFor="let personagens of personagens?.results | filtroPipe : buscarPersonagem">
+    <div class="imagem">
+      <img [src]="personagens.image">
+      <div class="nome">
+        <p class="texto"><b>NOME:</b> {{personagens.name}}</p>
+        <div class="status">
+          <p class="texto"><b>STATUS:</b> {{personagens.status}}</p>
+          <div class="especie">
+            <p class="texto"><b>ESPÉCIE:</b> {{personagens.species}} {{personagens.type}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+</body>
